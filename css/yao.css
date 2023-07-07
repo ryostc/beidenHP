@@ -1,3 +1,48 @@
+@charset "utf-8";
+
+html {
+    scroll-padding-top: 90px;
+}
+
+.main {
+    margin: 100px 0;
+    /* padding: 150px 0; */
+    color: #5a5c5f;
+}
+
+#main-headline {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 40px;
+    margin-bottom: 3px;
+}
+
+.siteMap {
+    font-size: 24px;
+}
+
+.siteMap a {
+    margin-top: 5px;
+    padding: 3px 5px;
+    color: #5a5c5f;
+}
+
+.siteMap a:hover {
+    background-color: #e2f1ff;
+    transition: background-color 0.5s;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+#building {
+    margin: 30px 0;
+}
+
 #building img {
     max-width: 100%;
 }
@@ -19,6 +64,25 @@
     flex: 1 1 auto;
     margin-right: 8px;
 }
+
 #building li:last-of-type {
     margin-right: 0;
+}
+
+#access table {
+    margin: auto;
+}
+
+#access th {
+    font-size: 24px;
+    padding: 5px;
+}
+
+#access td {
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.google-map {
+    text-align: center;
 }

@@ -1,88 +1,197 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="ja">
-	<head>
-		<meta charset="UTF-8">
-	    <title>ベーデン | 八尾校</title>
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="image/png" href="../images/logo1.PNG">
-	    <link rel="stylesheet" type="text/css" href="../css/common.css">
-	    <link rel="stylesheet" type="text/css" href="../css/yao.css">
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ベーデン | 教室詳細</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="../images/logo1.PNG" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/yao.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-	<body>
-	    <div class="header">
-	    	<div class ="container">
-	    		<div class="header-left">
-	    			<img class="header-logo" src="../images/logo1.PNG" alt="Logo">
-	    		</div>
-				<div class="header-center">ベーデン</div>
-	    		<div class="header-right">
-	    			<a href="../index2.html">トップ</a>
-	    			<a href="./yao.html">教室一覧</a>
-	    			<a href="./course.html">コース・料金</a>
-	    			<a href="./index2.html">YouTube</a>
-	    		</div>
-	    		<div class="clear"></div>
-	    	</div>
-	    </div>
-	    <div class="main">
-	    	<div class="container">
-                <h1>八尾校</h1>
-                <div class="siteMap">
-	    			<a href="#building">教室の雰囲気</a>
-	    			<a href="#instructor">講師紹介</a>
-	    			<a href="#access">アクセス</a>
-	    		</div>
-                <div id="building">
-                    <div class="center">
-                        <h2>教室の雰囲気</h2>
-                        <div><img id="bigimg" src="../images/room1.jpg" alt="room1"></div>
-                        <ul>
-                            <li><img src="../images/room1.jpg" class="thumb" data-image="../images/room1.jpg"></li>
-                            <li><img src="../images/room2.jpg" class="thumb" data-image="../images/room2.jpg"></li>
-                            <li><img src="../images/room4.jpg" class="thumb" data-image="../images/room4.jpg"></li>
-                            <li><img src="../images/room6.jpg" class="thumb" data-image="../images/room6.jpg"></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="instructor">
-                    <h2>講師紹介</h2>
-                </div>
-                <div id="access">
-                    <h2 class="access-title">アクセス</h2>
-                    <table>
-                        <tr>
-                            <th>住所</th>
-                            <td>&#12306;581-0802 大阪府八尾市北本町2丁目3-8 瀬口ビル301号</td>
-                        </tr>
-                        <tr>
-                            <th>アクセス</th>
-                            <td>近鉄八尾駅 徒歩3分</td>
-                        </tr>
-                        <tr>
-                            <th>開校時間</th>
-                            <td>10:00~22:00</td>
-                        </tr>
-                    </table>
-                    <div class="google-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9515878390284!2d135.5994388157074!3d34.630663680452635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600120a8375c44cb%3A0x614ad9405fa14721!2zVVPjg5zjg7zjgqvjg6vmlZnlrqQg5YWr5bC-6aeF5YmN5qCh!5e0!3m2!1sja!2sjp!4v1677133355555!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-	    	</div>
-	    </div>
-	    <div class="footer">
-	    	<div class="container">
-	    		<div class=footer-left>
-	    			<p>このサイトをシェアする</p>
-	    			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="ベーデン" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-	    		</div>
-	    		<div class="footer-right">
-	    			&copy; 2023ベーデン
-	    		</div>
-	    		<div class="clear"></div>
-	    	</div>
-	    </div>
-	    <script src="../script.js"></script>
-	</body>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="header-left">
+          <img class="header-logo" src="../images/logo1.PNG" alt="Logo" />
+          <p class="header-title">ベーデン</p>
+        </div>
+        <div class="header-right">
+          <a href="../index2.html">トップ</a>
+          <a href="./yao.html">教室詳細</a>
+          <a href="./course.html">コース・料金</a>
+          <a href="./index2.html">YouTube</a>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div id="main-headline">
+          <h1 class="main-title">八尾校</h1>
+          <div class="siteMap">
+            <a href="#building">教室の雰囲気</a>
+            <a href="#instructor">講師紹介</a>
+            <a href="#access">アクセス</a>
+          </div>
+        </div>
+        <div id="building">
+          <div class="center">
+            <h2>教室の雰囲気</h2>
+            <div><img id="bigimg" src="../images/room1.jpg" alt="room1" /></div>
+            <ul>
+              <li>
+                <img
+                  src="../images/room1.jpg"
+                  class="thumb"
+                  data-image="../images/room1.jpg"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/room2.jpg"
+                  class="thumb"
+                  data-image="../images/room2.jpg"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/room4.jpg"
+                  class="thumb"
+                  data-image="../images/room4.jpg"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/room6.jpg"
+                  class="thumb"
+                  data-image="../images/room6.jpg"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="instructor">
+          <h2>講師紹介</h2>
+          <div>
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+            <p>テスト</p>
+            <br />
+          </div>
+        </div>
+        <div id="access">
+          <h2 class="access-title">アクセス</h2>
+          <table>
+            <tr>
+              <th>住所</th>
+              <td>&#12306;581-0802 大阪府八尾市北本町2丁目3-8 瀬口ビル301号</td>
+            </tr>
+            <tr>
+              <th>アクセス</th>
+              <td>近鉄八尾駅 徒歩3分</td>
+            </tr>
+            <tr>
+              <th>開校時間</th>
+              <td>10:00~22:00</td>
+            </tr>
+          </table>
+          <div class="google-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9515878390284!2d135.5994388157074!3d34.630663680452635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600120a8375c44cb%3A0x614ad9405fa14721!2zVVPjg5zjg7zjgqvjg6vmlZnlrqQg5YWr5bC-6aeF5YmN5qCh!5e0!3m2!1sja!2sjp!4v1677133355555!5m2!1sja!2sjp"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer-left">
+          <p>このサイトをシェアする</p>
+          <a
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            class="twitter-share-button"
+            data-text="ベーデン"
+            data-show-count="false"
+            >Tweet</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </div>
+        <div class="footer-right">&copy; 2023ベーデン</div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <script src="../script.js"></script>
+  </body>
 </html>
