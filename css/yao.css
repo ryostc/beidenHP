@@ -5,7 +5,7 @@ html {
 }
 
 .main {
-    margin: 100px 0;
+    margin-top: 100px;
     /* padding: 150px 0; */
     color: #5a5c5f;
 }
@@ -40,6 +40,35 @@ h2 {
     font-size: 32px;
     margin-bottom: 5px;
     text-align: center;
+}
+
+.instructor1 {
+    display: flex;
+}
+
+.instructor_introduction {
+    /* 文字を上下中央寄せに */
+    margin: auto 0;
+    margin-left: 30px;
+}
+
+.instructor_name {
+    font-size: 28px;
+}
+
+.instructor_text {
+    margin-top: 5px;
+    /* 行間を調整 */
+    line-height: 150%;
+    font-size: 16px;
+}
+
+#instructor1_img {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    /* 角丸半径を50%にする(=円形にする) */
+    border-radius: 50%;
 }
 
 #building {
