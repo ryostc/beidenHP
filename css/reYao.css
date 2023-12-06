@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+@media screen and (min-width: 670px) {
+    ul {
+        display: flex;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .line-footer-out {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+    .main-title {
+        font-size: 32px;
+    }
+
+    .siteMap {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    #building {
+        margin: 15px 0;
+    }
+
+    #instructor {
+        margin: 0 5px 5px;
+    }
+
+    .instructor_name {
+        font-size: 20px;
+    }
+
+    .instructor_text {
+        font-size: 14px;
+    }
+
+    #instructor_img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .inst-img-out1 {
+        margin-right: 15px;
+    }
+
+    .inst-img-out2 {
+        margin-left: 15px;
+    }
+
+    #access th {
+        font-size: 20px;
+    }
+
+    #access td {
+        font-size: 14px;
+    }
+
+    .google-map {
+        margin-bottom: 90px;
+    }
+
+    .google-map iframe {
+        width: 340px;
+        height: 240px;
+    }
+}

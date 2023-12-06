@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@media (max-width : 960px) {
+    .grid {
+        display: grid;
+        /* 要素を1:1:1で1列に2つずつ並べる */
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 670px) {
+    .main-title {
+        font-size: 32px;
+    }
+
+    .grid {
+        display: grid;
+        /* 要素を1:1:1で1列に1つずつ並べる */
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,26 +1,24 @@
 @charset "utf-8";
 
-.main-visual {
-    width: 100%;
-    margin: 0;
-    padding: 150px 0;
+.body {
     position: relative;
-    /* top: 180px; */
-    top: 200px;
-    color: #ffffff;
-    text-align: center;
 }
 
-.main-visual::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.main-visual {
+    width: 100%;
+    padding: 150px 0;
+    color: #ffffff;
     background-image: linear-gradient(#8a2be2, #6495ed);
-    transform: skewY(-7deg);
-    z-index: -1;
+    text-align: center;
+    /* 15%の部分で背景の傾きを調節できる */
+    clip-path: polygon(0 15%, 100% 0, 100% calc(100% - 15%), 0 100%);
+    /* どのサイズのときでも画面の中央に配置(margin-topでヘッダー部分を除いて中央へ) */
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .main-title {
@@ -37,10 +35,22 @@
 
 .main-icon {
     display: flex;
-    display: block;
+    /* display: block; */
+    justify-content: center;
+    align-items: center;
     margin: auto;
 }
 
 .main-icon a {
+    margin-left: 10px;
     text-decoration: none;
+}
+
+.lit_link {
+    color: white;
+    font-size: 32px;
+    margin-left: 3px;
+    padding: 0px 3px 1px 3px;
+    border: 3px solid;
+    border-radius: 6px;
 }

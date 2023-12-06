@@ -1,13 +1,13 @@
 @charset "utf-8";
 
-html {
+/* html {
     scroll-padding-top: 90px;
     height: 100%;
 }
 
 body {
     height: 100%;
-}
+} */
 
 .main {
     margin: 100px 0 0 0;
@@ -59,8 +59,4 @@ td {
 .explanation p {
     font-size: 24px;
     margin-bottom: 10px;
-}
-
-.explanation p strong {
-    font-size: 32px;
 }

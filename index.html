@@ -1,11 +1,96 @@
 <!DOCTYPE html>
+
 <html lang="ja">
   <head>
-    <meta charset="UTF-8">
-    <title>Beiden</title>
+    <meta charset="UTF-8" />
+    <title>ベーデン | トップページ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="images/logo1.PNG" />
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/reBase.css" />
+    <link rel="stylesheet" type="text/css" href="./css/reIndex.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <h1>現在作成中ですので少々お待ち下さい</h1>
-    <p>公式ラインのQRコードは問題なく使用することができます</p>
+    <div class="wrapper">
+      <div class="header">
+        <div class="container">
+          <div class="header-left">
+            <img class="header-logo" src="images/logo1.PNG" alt="Logo" />
+            <p class="header-title">ベーデン</p>
+          </div>
+          <div class="header-right">
+            <!-- ボタンが押されたかどうかをチェックボックスで判断する -->
+            <input type="checkbox" id="menu-btn-check" />
+            <!--     ハンバーガーボタン -->
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+              <ul class="header-text">
+                <li>
+                  <a href="./index.html">トップ</a>
+                </li>
+                <li>
+                  <a href="./html/yao.html">教室詳細</a>
+                </li>
+                <li>
+                  <a href="./html/course.html">コース・料金</a>
+                </li>
+                <li>
+                  <a href="./html/youtube.html">YouTube</a>
+                </li>
+              </ul>
+            </div>
+            <div class="line-header">
+              <a class="line-header-text" href="https://lin.ee/4ekPzl1"
+                ><img
+                  src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+                  class="line-header-img"
+                  alt="友だち追加"
+              /></a>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+
+      <div class="main-visual">
+        <div class="container">
+          <h1 class="main-title">1対1の徹底レッスンで理想の歌声へ</h1>
+          <p class="main-text">
+            月2回の特別なイベントも実施中!
+            <br />
+            詳しくは無料体験レッスンにて
+          </p>
+          <div class="main-icon">
+            <a class="insta" href="https://instagram.com/bokarujiaoshibeden"
+              ><img src="images/insta48.png" alt="instagram"
+            /></a>
+            <a class="lit_link" href="https://lit.link/beden0201">
+              <span class="spanlink">Lit.Link</span>
+            </a>
+          </div>
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </div>
+      </div>
+      <!-- <div class="line-footer-out">
+        <div class="line-footer-in">
+          <a class="line-footer-text" href="https://lin.ee/4ekPzl1">
+            <p>ラインの追加はこちら</p>
+          </a>
+        </div>
+      </div> -->
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>

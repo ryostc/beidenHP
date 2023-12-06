@@ -6,8 +6,10 @@
     <title>ベーデン | コース・料金</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="../images/logo1.PNG" />
-    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/course.css" />
+    <link rel="stylesheet" type="text/css" href="../css/reBase.css" />
+    <link rel="stylesheet" type="text/css" href="../css/reCourse.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,20 +27,34 @@
             <p class="header-title">ベーデン</p>
           </div>
           <div class="header-right">
-            <span class="header-text">
-              <a href="../index2.html">トップ</a>
-              <a href="./yao.html">教室詳細</a>
-              <a href="./course.html">コース・料金</a>
-              <a href="./youtube.html">YouTube</a>
-            </span>
-            <a href="https://lin.ee/4ekPzl1"
-              ><img
-                src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
-                id="lineAdd"
-                alt="友だち追加"
-                height="36"
-                border="0"
-            /></a>
+            <!-- ボタンが押されたかどうかをチェックボックスで判断する -->
+            <input type="checkbox" id="menu-btn-check" />
+            <!--     ハンバーガーボタン -->
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+              <ul class="header-text">
+                <li>
+                  <a href="../index.html">トップ</a>
+                </li>
+                <li>
+                  <a href="./yao.html">教室詳細</a>
+                </li>
+                <li>
+                  <a href="./course.html">コース・料金</a>
+                </li>
+                <li>
+                  <a href="./youtube.html">YouTube</a>
+                </li>
+              </ul>
+            </div>
+            <div class="line-header">
+              <a class="line-header-text" href="https://lin.ee/4ekPzl1"
+                ><img
+                  src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+                  class="line-header-img"
+                  alt="友だち追加"
+              /></a>
+            </div>
           </div>
           <div class="clear"></div>
         </div>
@@ -53,15 +69,15 @@
             <table>
               <tr>
                 <td class="times">月2回</td>
-                <td>10,000円</td>
+                <td>11,000円</td>
               </tr>
               <tr>
                 <td class="times">月3回</td>
-                <td>20,000円</td>
+                <td>16,500円</td>
               </tr>
               <tr>
                 <td class="times">月4回</td>
-                <td>30,000円</td>
+                <td>22,000円</td>
               </tr>
             </table>
           </div>
@@ -85,13 +101,19 @@
               レッスンは15分のウォーミングアップと45分のレッスンで計60分間となっています
             </p>
             <p>入会後のコース変更は可能です！</p>
-            <p><strong>初月は3,000円引きになっています!</strong></p>
           </div>
         </div>
       </div>
-      <div class="footer">
-        <p><small>&copy; 2023ベーデン</small></p>
+      <div class="line-footer-out">
+        <div class="line-footer-in">
+          <a class="line-footer-text" href="https://lin.ee/4ekPzl1">
+            <p>ラインの追加はこちら</p>
+          </a>
+        </div>
       </div>
+      <!-- <div class="footer">
+        <p><small>&copy; 2023ベーデン</small></p>
+      </div> -->
       <script src="script.js"></script>
     </div>
   </body>

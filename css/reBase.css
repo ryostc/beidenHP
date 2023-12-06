@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+@media screen and (min-width: 670px) {
+  ul {
+    display: flex;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .line-footer-out {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 670px) {
+
+  /* .line {
+    order: 2;
+  }
+
+  .header-text {
+    order: 1;
+  } */
+
+  .menu-content {
+    float: left;
+    display: flex;
+  }
+
+  .line-header {
+    display: none !important;
+  }
+
+  .line-footer-out {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .line-footer-in {
+    width: 80%;
+    height: 50px;
+    background-color: #06c755;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .line-footer-text {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .container {
+    padding: 0px 5px;
+  }
+
+  .header {
+    height: 72px;
+    width: 100%;
+    /* box-shadow: 0 0 10px #dddddd; */
+    background-color: white;
+    box-shadow: 0 0 10px #dddddd;
+    position: fixed;
+    top: 0;
+  }
+
+  .header-logo {
+    width: 52px;
+    height: 52px;
+    margin: 10px 0;
+  }
+
+  .header-title {
+    font-size: 32px;
+    color: #5a5c5f;
+    margin: 10px 0;
+    padding: 0 5px;
+  }
+
+  /* ハンバーガーボタンの実装 */
+  .menu-btn {
+    position: fixed;
+    display: flex;
+    right: 10px;
+    height: 48px;
+    width: 48px;
+    /* 三本線の横を中央揃え */
+    justify-content: center;
+    /* 三本線の縦を中央揃え */
+    align-items: center;
+    /* メニューを開いたときに閉じるボタンが前に来るために必要 */
+    z-index: 90;
+    background-color: #5980C0;
+    border-radius: 10px;
+  }
+
+  /* 三本線の実装 */
+  .menu-btn span,
+  .menu-btn span:before,
+  .menu-btn span:after {
+    /* 三本線の本体を表示させるのに必要 */
+    content: "";
+    display: block;
+    /* 三本線の一つの幅を設定 */
+    height: 3px;
+    /* 三本線の一つ長さを設定 */
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+  }
+
+  /* 三本線の上の線の位置を調節 */
+  .menu-btn span:before {
+    bottom: 8px;
+  }
+
+  /* 三本線の下の線の位置を調節 */
+  .menu-btn span:after {
+    top: 8px;
+  }
+
+  /*メニューオープン時は真ん中の線を背景と同じ色にして透明化する*/
+  #menu-btn-check:checked~.menu-btn span {
+    background-color: #5980C0;
+  }
+
+  /* メニューを開いている時はハンバーガーボタンが×になる
+     bottomとtopで上下の線を中央に持ってきて,45度回転させる */
+  #menu-btn-check:checked~.menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+
+  #menu-btn-check:checked~.menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+
+  /* メニュー部分の実装 */
+  .menu-content {
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    flex-flow: column;
+    top: 0;
+    /* メニューを外に出しておく */
+    left: 100%;
+    z-index: 80;
+    background-color: #5980C0;
+    /*アニメーションを滑らかにする*/
+    transition: all 0.5s;
+  }
+
+  /* 開いたときの余白を設定 */
+  .menu-content ul {
+    padding: 70px 10px 0;
+  }
+
+  /* 開いたときの下線と箇条書きの点を削除 */
+  .menu-content ul li {
+    border-bottom: solid 1px whitesmoke;
+    list-style: none;
+  }
+
+  .menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+    color: #2b2b2b;
+    text-decoration: none;
+    padding: 9px 15px 0px 0;
+    position: relative;
+  }
+
+  /*メニューを画面内へ動かす*/
+  #menu-btn-check:checked~.menu-content {
+    left: 30%;
+  }
+
+}

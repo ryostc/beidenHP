@@ -42,35 +42,6 @@ h2 {
     text-align: center;
 }
 
-.instructor1 {
-    display: flex;
-}
-
-.instructor_introduction {
-    /* 文字を上下中央寄せに */
-    margin: auto 0;
-    margin-left: 30px;
-}
-
-.instructor_name {
-    font-size: 28px;
-}
-
-.instructor_text {
-    margin-top: 5px;
-    /* 行間を調整 */
-    line-height: 150%;
-    font-size: 16px;
-}
-
-#instructor1_img {
-    text-align: center;
-    width: 300px;
-    height: 300px;
-    /* 角丸半径を50%にする(=円形にする) */
-    border-radius: 50%;
-}
-
 #building {
     margin: 30px 0;
 }
@@ -101,6 +72,51 @@ h2 {
     margin-right: 0;
 }
 
+.instructor_introduction {
+    /* 文字を上下中央寄せに */
+    margin: auto 0;
+}
+
+.instructor_name {
+    font-size: 28px;
+}
+
+.instructor_text {
+    margin-top: 5px;
+    /* 行間を調整 */
+    line-height: 150%;
+    font-size: 16px;
+}
+
+.inst-img-out1 {
+    margin-right: 30px;
+}
+
+.inst-img-out2 {
+    margin-left: 30px;
+}
+
+
+#instructor_img {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    /* 角丸半径を50%にする(=円形にする) */
+    border-radius: 50%;
+}
+
+.instructor1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.instructor2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 #access table {
     margin: auto;
 }
@@ -117,4 +133,10 @@ h2 {
 
 .google-map {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.google-map iframe {
+    width: 600px;
+    height: 450px;
 }
